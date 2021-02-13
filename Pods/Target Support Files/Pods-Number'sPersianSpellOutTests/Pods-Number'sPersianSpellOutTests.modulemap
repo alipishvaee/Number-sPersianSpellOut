@@ -1,0 +1,6 @@
+framework module Pods_Number_sPersianSpellOutTests {
+  umbrella header "Pods-Number'sPersianSpellOutTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
