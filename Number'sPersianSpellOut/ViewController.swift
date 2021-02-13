@@ -16,9 +16,19 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
 
+    
+    
+    
+    func convertNumberToWord(number: Int) -> String {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = NumberFormatter.Style.spellOut
+        let spellOutWord = formatter.string(for: number)!
+        return spellOutWord
+    }
+    
 
 }
 
