@@ -1,24 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Number_sPersianSpellOut" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Number Here!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nUv-N1-8bS">
+                                <rect key="frame" x="42" y="278" width="330" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ctA-5F-u4U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numbers to word" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YRD-Ge-p6E">
+                                <rect key="frame" x="42" y="352" width="330" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="4XB-T5-pPk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="عدد به صورت حروف" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0B3-cN-L0l">
+                                <rect key="frame" x="42" y="416" width="330" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UoI-B5-ifu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input Number" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztE-fi-3eX">
+                                <rect key="frame" x="42" y="250" width="120" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="jeb-K8-uPA"/>
+                                    <constraint firstAttribute="width" constant="120" id="wE3-Oo-Rxg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="0B3-cN-L0l" firstAttribute="trailing" secondItem="nUv-N1-8bS" secondAttribute="trailing" id="2xu-JZ-6G8"/>
+                            <constraint firstItem="nUv-N1-8bS" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-150" id="JCp-XX-JJX"/>
+                            <constraint firstItem="0B3-cN-L0l" firstAttribute="top" secondItem="YRD-Ge-p6E" secondAttribute="bottom" constant="24" id="JDR-tY-w4E"/>
+                            <constraint firstItem="YRD-Ge-p6E" firstAttribute="trailing" secondItem="nUv-N1-8bS" secondAttribute="trailing" id="NK9-kP-EMl"/>
+                            <constraint firstItem="nUv-N1-8bS" firstAttribute="top" secondItem="ztE-fi-3eX" secondAttribute="bottom" constant="8" id="SE9-zg-fsm"/>
+                            <constraint firstItem="YRD-Ge-p6E" firstAttribute="top" secondItem="nUv-N1-8bS" secondAttribute="bottom" constant="24" id="Tul-hq-koQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nUv-N1-8bS" secondAttribute="trailing" constant="42" id="YZs-8T-vAF"/>
+                            <constraint firstItem="YRD-Ge-p6E" firstAttribute="leading" secondItem="nUv-N1-8bS" secondAttribute="leading" id="ex7-e5-Kdg"/>
+                            <constraint firstItem="nUv-N1-8bS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="h1O-eA-U83"/>
+                            <constraint firstItem="nUv-N1-8bS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="42" id="hsq-bS-qon"/>
+                            <constraint firstItem="ztE-fi-3eX" firstAttribute="leading" secondItem="nUv-N1-8bS" secondAttribute="leading" id="sgD-tj-RVg"/>
+                            <constraint firstItem="0B3-cN-L0l" firstAttribute="leading" secondItem="nUv-N1-8bS" secondAttribute="leading" id="xdc-L2-sQj"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="EnglishWordLabel" destination="YRD-Ge-p6E" id="tKT-Ro-HBl"/>
+                        <outlet property="InputNumberTextField" destination="nUv-N1-8bS" id="JUn-WF-fEa"/>
+                        <outlet property="PersianWordLabel" destination="0B3-cN-L0l" id="QF7-kO-slX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="111.59420289855073" y="93.75"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
